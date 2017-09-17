@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Marck+Script&subset=cyrillic,latin-ext');
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #d4d4d4;
+}
+body #root .main_container {
+  width: 94vw;
+  height: 100vh;
+  margin: 30px auto;
+  background-color: rgba(121, 255, 172, 0.43);
+}
+body #root .main_container .toDo_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body #root .main_container .toDo_container .toDo {
+  background-color: #fff;
+  width: 390px;
+  margin: 50px 0 50px 0;
+  display: flex;
+}
+body #root .main_container .toDo_container .toDo h1 {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  display: inline-block;
+  line-height: 41pt;
+  color: #444444;
+  border: 1px solid rgba(156, 112, 112, 0.68);
+  border-radius: 2px;
+  background: rgba(91, 118, 218, 0.25);
+}
+body #root .main_container .toDo_container .toDo .add_taskList {
+  color: #444444;
+  flex-grow: 1;
+  font-size: 35pt;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f5f5f5 linear-gradient(#dcdcdc, #efeaea);
+  transition: all .218s ease 0s;
+}
+body #root .main_container .toDo_container .toDo .add_taskList:hover {
+  color: #181818;
+  border: 1px solid #c6c6c6;
+  background: #f7f7f7 linear-gradient(#c5c5c5, #fbefef);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+body #root .main_container .toDo_container .toDo .add_taskList:active {
+  color: #333333;
+  border: 1px solid #cccccc;
+  background: #eeeeee linear-gradient(#eeeeee, #e0e0e0);
+  box-shadow: -3px 3px 13px rgba(0, 0, 0, 0.1) inset;
+}
+body #root .main_container .toDo_container .task_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container {
+  width: 470px;
+  margin: 20px 5px 20px 5px;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container button[type=submit]:hover {
+  cursor: pointer;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task {
+  margin: 10px 0 20px 0;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form {
+  display: flex;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form input {
+  flex-grow: 1;
+  font-size: 15pt;
+  text-indent: 10pt;
+  font-style: italic;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form input::-webkit-input-placeholder {
+  color: #ff0705;
+  text-align: center;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form .del_btn {
+  width: calc(38.25px);
+  vertical-align: middle;
+  line-height: 27px;
+  border-radius: inherit;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f95a5a;
+  color: #fff;
+  background: #f33c3b linear-gradient(#ec7c7c, #d26262);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form .del_btn:hover {
+  background: linear-gradient(#e8aeae, #a22d2d);
+  cursor: pointer;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .add_task form .del_btn:active {
+  background: linear-gradient(#ef6c6c, #e22929 20%, #a00c0c);
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.4) inset;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask {
+  display: none;
+  margin: 5px;
+  padding: 15px 5px 15px 22px;
+  border: 1px solid #fbfbd3;
+  background-color: lightgoldenrodyellow;
+  border-radius: 8px;
+  box-shadow: -8px 6px 11px 1px rgba(0, 0, 0, 0.1);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li {
+  margin: 0 0 10px 0;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form {
+  display: flex;
+  align-items: center;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form input {
+  margin-right: 24px;
+  border: none;
+  border-radius: 25px;
+  flex-grow: 1;
+  font-size: 18pt;
+  text-indent: 10pt;
+  font-family: 'Marck Script', cursive;
+  overflow: auto;
+  text-overflow: ellipsis;
+  background-color: wheat;
+  box-shadow: inset -5px 2px 18px 2px rgba(0, 0, 0, 0.1);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form input:hover {
+  cursor: pointer;
+  transform: scale(1.12, 1.12);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form input:focus {
+  cursor: text;
+  outline: none;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement {
+  position: relative;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .delete {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -24px;
+  top: -3.5px;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f95a5a;
+  color: #fff;
+  background: #f33c3b linear-gradient(#ec7c7c, #d26262);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .delete:hover {
+  background: linear-gradient(#e8aeae, #a22d2d);
+  cursor: pointer;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .delete:active {
+  background: linear-gradient(#ef6c6c, #e22929 20%, #a00c0c);
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.4) inset;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .done {
+  box-sizing: inherit;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 15px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 2.4em;
+  user-select: none;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid rgba(110, 121, 128, 0.8);
+  border-top-color: rgba(0, 0, 0, 0.3);
+  background: #cedce7 linear-gradient(#cedce7, #596a72);
+  box-shadow: 0 -1px rgba(10, 21, 28, 0.9) inset, 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .done:hover {
+  background: linear-gradient(#d2dfea, #71828c);
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .done:active {
+  line-height: 2.6em;
+  background: linear-gradient(#bac6cf, #c5d3de 20%, #71828c);
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.4) inset;
+  color: #000000;
+}
+body #root .main_container .toDo_container .task_container .Entr_new_task_container .tasks_block .someTask ul li form .forPseudoElement .done:focus {
+  outline: none;
+}
+.delete_button {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f95a5a;
+  color: #fff;
+  background: #f33c3b linear-gradient(#ec7c7c, #d26262);
+}
+.delete_button:hover {
+  background: linear-gradient(#e8aeae, #a22d2d);
+  cursor: pointer;
+}
+.delete_button:active {
+  background: linear-gradient(#ef6c6c, #e22929 20%, #a00c0c);
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.4) inset;
+}
+.done_toggle {
+  text-decoration: line-through;
+}
