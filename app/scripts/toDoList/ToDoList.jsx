@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MainToDo from '../mainToDo/MainToDo.jsx';
 
 class ToDoList extends Component{
@@ -10,5 +10,6 @@ class ToDoList extends Component{
         );
     }
 }
+/*git in console progress*/
 
 export default ToDoList;
